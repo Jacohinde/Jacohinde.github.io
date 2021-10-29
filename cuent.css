@@ -21,7 +21,7 @@ h2{
   margin: auto;
   margin-top: 15px;
   margin-bottom: 21px;
-  background-color: rgb( 245, 190, 35);
+  background-color: #CF9C00;
   padding: 17px;
   border: 1px solid black;
   border-radius: 17px;
@@ -29,9 +29,9 @@ h2{
 }
 #conte p{
   text-indent: 21px;
-  font-weight: bolder;
+  //font-weight: bolder;
   font-size: 19px;
   margin-top: 7px;
   text-align: justify;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Zen Antique Soft', serif;
 }
