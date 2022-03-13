@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Biblioteca Jacohinde</title>
+    <link rel="stylesheet" href="jack.css">
+    <link rel="icon" type="image/png" href="Icono.png" sizes="206x206"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div>
+<nav>
+  <ul>
+    <li>Cuentos</li>
+    <li>Pensamientos</li>
+    <li>Videos</li>
+    <li>Música</li>
+    <li>Contacto</li>
+  </ul>
+</nav>
+    <div id="mein">
+      <header>
+        <h1>Los Escritos de</h1><br>
+        <img src="LogoAJ.png" id="ondo1">
+      </header>
+<div class="cuad uno">
+  <h2>La guerra civil</h2>
+  <p>La especie ya ha crecido bastante, y es suficiente. Está lista para esta clase de Literatura. Se necesitarán crear nuevos mundos de ficciones donde las ideas, las emociones, las pasiones y los instintos giren con la fuerza de los huracanes</p>
+</div>
+<div class="cuad dos">
+  <h2>El Club 4:20</h2>
+  <p>La especie ya ha crecido bastante, y es suficiente. Está lista para esta clase de Literatura. Se necesitarán crear nuevos mundos de ficciones donde las ideas, las emociones, las pasiones y los instintos giren con la fuerza de los huracanes</p>
+</div>
+<div class="cuad tres">
+  <h2>Mundos Antiguos</h2>
+  <p>La especie ya ha crecido bastante, y es suficiente. Está lista para esta clase de Literatura. Se necesitarán crear nuevos mundos de ficciones donde las ideas, las emociones, las pasiones y los instintos giren con la fuerza de los huracanes</p>
+</div>
+<div class="cuad cuatro">
+  <h2>El Transplante</h2>
+  <p>La especie ya ha crecido bastante, y es suficiente. Está lista para esta clase de Literatura. Se necesitarán crear nuevos mundos de ficciones donde las ideas, las emociones, las pasiones y los instintos giren con la fuerza de los huracanes</p>
+</div>
+    </div>
+<img src="JacohindePic.jpg" id="foti">
+  </div>
+  <script type="text/javascript">
+  var texto;
+  function createHtml() {
+  colec();
+
+  $('#btn_download').attr('download', 'sampleFile.html');
+  $('#btn_download').attr('href', 'data:text/html,' + htmlContent);
+  $('#btn_download').show();
+}
+function colec(){
+  var elements = document.getElementById('foro').elements;
+  var htmlContent = "";
+  for(var i=0, element; element = elements[i++];){
+    htmlContent = document.getElementsByTagName('foro').value;
+  }
+  return htmlContent;
+}
+  function nova(){
+    var ga = document.createElement("INPUT");
+    ga.placeholder = tex.value;
+    document.getElementById('foro').appendChild(ga);
+  }
+  function sabe(){
+    //texto = document.getElementById('tex').value;
+texto = document.getElementsByTagName('document.body').value;
+    var textData = new Blob([texto], {type: 'text/plain'});
+  var myTextFile = window.URL.createObjectURL(textData);
+  document.getElementById('downloadText').href = myTextFile;
+  }
+
+  </script>
+  </body>
+</html>
