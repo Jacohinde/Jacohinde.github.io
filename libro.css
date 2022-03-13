@@ -194,3 +194,28 @@ a{
   width: 100%;
   text-align: center;
 }
+#conte{
+  width: 75%;
+  position: relative;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 21px;
+  background-color: #FFFFCC;
+  padding: 17px;
+  border: 1px solid black;
+  border-radius: 17px;
+  box-shadow: 3px 3px 9px 5px;
+}
+#conte p{
+  text-indent: 21px;
+  font-size: 19px;
+  margin-top: 7px;
+  text-align: justify;
+  font-family: 'Zen Antique Soft', serif;
+}
+#conte h1, h2{
+  text-align: center;
+}
+.apart{
+  text-align: center !important;
+}
