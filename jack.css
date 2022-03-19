@@ -65,7 +65,8 @@ header{
 .cuad{
   position: absolute;
   width: 27.1%;
-  height: 31%;
+  height: auto;
+  padding: 3px;
   border: 1px solid black;
   box-shadow: 3px 2px 9px;
   text-align:center;
@@ -74,7 +75,7 @@ header{
   font-family: fantasy;
 }
 .cuad:hover{
-  height: 33.7%;
+  height: 37.7%;
   border: 1px solid gold;
 }
 .uno{
