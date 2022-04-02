@@ -75,3 +75,16 @@ h2{
   bottom: 0;
   margin-top: 10px;
 }
+.llang{
+  background-color: darkgray; 
+  width: fit-content;
+  padding: 7px;
+  position:relative;
+  top: 5vh;
+  left: 2.5%;
+  border-radius: 12px;
+}
+.llang p:hover{
+  color: orangered;
+  background-color: orange;
+}
