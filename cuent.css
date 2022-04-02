@@ -75,7 +75,7 @@ h2{
   bottom: 0;
   margin-top: 10px;
 }
-.llang{
+#llang{
   background-color: darkgray; 
   width: fit-content;
   padding: 7px;
@@ -84,7 +84,6 @@ h2{
   left: 2.5%;
   border-radius: 12px;
 }
-.llang p:hover{
-  color: orangered;
-  background-color: orange;
+#llang p:hover a {
+  color: rgb(228, 143, 15);
 }
