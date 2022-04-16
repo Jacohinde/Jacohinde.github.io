@@ -23,7 +23,6 @@ header{
   align-items: center;
   justify-content: center;
   align-self: center;
-  //background-color: rgba(80, 34, 6, 1);
   padding: 3px;
 }
 header p{
@@ -140,10 +139,10 @@ a{
 #inici{
   background-color: grey;
   padding: 4px;
-  border-radius: 120px;
+  border-radius: 15px;
   position: absolute;
   left: 15px;
-  bottom: 3%;
+  top: 1%;
   cursor: pointer;
   box-shadow: 1px 3px 7px;
 }
