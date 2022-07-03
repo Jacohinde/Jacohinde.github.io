@@ -108,14 +108,14 @@ div a{
   color: black;
 }
 @media only screen and (max-width: 730px) {
-  html, body {
-    height: 100%;
-    width: 100%;
+  body {
     background-color: lightblue;
     overflow: hidden;
   }
   body div{
+    margin: 0;
     display: flex;
+    justify-content: center
   }
   body div nav {
    display: none;
@@ -124,14 +124,27 @@ div a{
     display: none;
   }
   #foti{
-  width: 107px;
+  width: 97px;
   position: absolute;
-  margin: auto;
+  right: 50px;
+  bottom: 40%;
   border: 2px solid gold;
   border-radius: 50%;
   box-shadow: 1px 2px 9px;
 }
-  body header h1{
+  body div header h1{
     display: none;
+  }
+  .cuad h2{
+    size: 0.8em;
+    font-size: 1em
+  }
+  .cuad:hover{
+  height: 7.7%;
+  border: 1px solid gold;
+}
+  #ondo1{
+    position: absolute;
+    left: -25%
   }
 }
