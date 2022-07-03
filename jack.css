@@ -110,8 +110,9 @@ div a{
 @media only screen and (max-width: 730px) {
   body {
     background-color: lightblue;
+    overflow: hidden;
   }
-  nav {
+  body div nav {
    display: none;
   }
   .cuad p{
