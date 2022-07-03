@@ -109,6 +109,8 @@ div a{
 }
 @media only screen and (max-width: 730px) {
   body {
+    height: 100%;
+    width: 100%;
     background-color: lightblue;
     overflow: hidden;
   }
@@ -119,7 +121,7 @@ div a{
     display: none;
   }
   #foti{
-  width: 137px;
+  width: 107px;
   position: absolute;
   margin: auto;
   border: 2px solid gold;
