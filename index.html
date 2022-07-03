@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://jacohinde.github.io/">
     <title>Biblioteca Jacohinde</title>
-     <meta name="description" content="Plataorma de Amadeo Jacohinde para publicar escritos">
+     <meta name="description" content="Plataforma de Amadeo Jacohinde para publicar escritos">
     <meta name="keywords" content="Literatura Amadeo Jacohinde">
     <meta name="author" content="Amadeo Jacohinde">
     <meta property="og:url"           content="https://jacohinde.github.io/">
@@ -19,6 +19,7 @@
     <link rel="icon" type="image/png" href="Icono.png" sizes="206x206"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://www.w3counter.com/tracker.js?id=144714"></script>
   </head>
   <body>
     <div>
@@ -65,36 +66,5 @@
  </div>
 <img src="JacohindePic.jpg" id="foti">
   </div>
-  <script type="text/javascript">
-  var texto;
-  function createHtml() {
-  colec();
-
-  $('#btn_download').attr('download', 'sampleFile.html');
-  $('#btn_download').attr('href', 'data:text/html,' + htmlContent);
-  $('#btn_download').show();
-}
-function colec(){
-  var elements = document.getElementById('foro').elements;
-  var htmlContent = "";
-  for(var i=0, element; element = elements[i++];){
-    htmlContent = document.getElementsByTagName('foro').value;
-  }
-  return htmlContent;
-}
-  function nova(){
-    var ga = document.createElement("INPUT");
-    ga.placeholder = tex.value;
-    document.getElementById('foro').appendChild(ga);
-  }
-  function sabe(){
-    //texto = document.getElementById('tex').value;
-texto = document.getElementsByTagName('document.body').value;
-    var textData = new Blob([texto], {type: 'text/plain'});
-  var myTextFile = window.URL.createObjectURL(textData);
-  document.getElementById('downloadText').href = myTextFile;
-  }
-
-  </script>
   </body>
 </html>
