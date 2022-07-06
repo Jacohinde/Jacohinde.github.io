@@ -7,6 +7,9 @@ html body{
   width: 100%;
   overflow-y: hidden;
 }
+.mob{
+  display: none;
+}
 nav{
   position: absolute;
   width: 100%;
@@ -46,7 +49,6 @@ nav ul li:hover{
 #mein{
   display: flex;
   position: absolute;
-  background-color: ;
   width: 100%;
   height: 100vh;
   align-items: center;
@@ -108,31 +110,50 @@ div a{
   color: black;
 }
 @media only screen and (max-width: 730px) {
-  body {
-    background-color: lightblue;
+  html body {
+    background-color: rgb(26, 18, 80);
     overflow: hidden;
+    overflow-y: hidden;
+    z-index: -1;
   }
-  body div{
-    margin: 0;
+  .des{
+    display: none;
+  }
+  .mob{
     display: flex;
-    justify-content: center
+    height: 100%;
+    z-index: 10;
   }
-  body div nav {
+  #mein{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  top: 25%;
+  align-items: center;
+  margin-top: 5%;
+  justify-content: center;
+}
+  .mob nav {
    display: none;
+  }
+  .cuad{
+    background-color: aliceblue;
   }
   .cuad p{
     display: none;
   }
   #foti{
   width: 97px;
+  margin: 7px;
   position: absolute;
-  right: 50px;
-  bottom: 40%;
+  left: 0%;
+  bottom: 83%;
   border: 2px solid gold;
   border-radius: 50%;
   box-shadow: 1px 2px 9px;
 }
-  body div header h1{
+  .mob header h1{
     display: none;
   }
   .cuad h2{
@@ -145,6 +166,10 @@ div a{
 }
   #ondo1{
     position: absolute;
-    left: -25%
+    margin: auto;
+    width: 70%;
+    left: 25%;
+    bottom: 90%;
+    z-index: -1;
   }
 }
