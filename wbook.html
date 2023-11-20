@@ -1,59 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Cuentos Jacohinde</title>
-    <meta name="viewport" content="initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro Cuentos</title>
     <link rel="icon" type="image/png" href="icon.webp" sizes="206x206"/>
-    <link rel="stylesheet" href="libro.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="libro1.css">
+</head>
+<body>
     <img src="icono.jpg" class="fondo" id="fndo1">
-<div class="mein">
-      <nav id="inff">
-        <ul>
-          <li  onclick="desap()">¿Qué es un Libro-Web?</li>
-        </ul>
-      </nav>
-      <img src="icono.jpg" class="fonda" id="fndo2">
-      <div id="abree"><a href="indice.html">Abrir Libro</a></div>
- <header id="textoUno">
-  <h1>Mitología del Fuego y de la Jungla</h1>
-  <div class="linea1"></div>
-  <small>Amadeo Jacohinde</small><br><br>
-  <p>Este es un pequeño universo de historias donde los personajes brotan a la luz y nos saludan desde sus crímenes absurdos y sus ficciones psicológicas, desde sus filosofías inexistentes tratan de entendernos: aquí no es el lector quien va a indagar en los personajes, sino son ellos quienes ahora se adentran en nosotros y tratan de establecer contacto con nuestra realidad para dejar una parte de sí mismos en ella antes de esfumarse, dejándonos con la sensación de haber tocado la fibra superficial de los mundos desconocidos y prohibidos al conocimiento humano.
-    Es normal estremecerse aquí, sentir terror.</p>
- </header>
-
+    <div class="pagy">
+        <img src="\PortadaPro.PNG" id="fondo2">
+    <div class="abrir"><h3>ABRIR LIBRO</h3></div>
 </div>
-<script type="text/javascript">
-var ge = false, ke = false;
-var gu = document.getElementById('inff');
-//QUITA EL BOTON DE INFO
-function desap(){
-  gu.style.display = "none";
-}
-function desip(){
-  gu.style.display = "flex";
-}
-
-function escrt(v){
-  switch (v) {
-    case 0:
-    var ini = document.getElementById('inicion');
-    ini.style.display = "block";
-      break;
-  }
-}
-
-function indipe(){
-  var hilt = document.getElementById('inicion');
-  hilt.style.display = "none";
-}
-
-function indise(){
-  window.open("indice.html");
-}
-</script>
-  </body>
+</body>
 </html>
