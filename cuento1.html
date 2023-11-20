@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="span" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Arma de mujer por la mañana -A. Jacohinde</title>
-    <link rel="canonical" href="https://jacohinde.github.io/cuento1">
-    <link rel="icon" type="image/png" href="icon.webp" sizes="206x206"/>
-    <link rel="stylesheet" href="libro.css">
+    <link rel="stylesheet" href="libro1.css">
   </head>
   <body>
-
+    <div id="lengua" onclick="lengua()"><span style="color: #233343;"> Español </span><span onmouseenter="color:white"> Inglés </span></div>
+  <divc class="caja">
+    <div class="darmod" id="oscuro" onclick="darmod()">Modo Oscuro</div>
+    <div class="darmod2" onclick="inise()">Volver a Índice"</div>
     <section id="conte">
-      <h1>ARMA DE MUJER POR LA MAÑANA </h1> <br>
+      <h1>ARMA DE MUJER POR LA MAÑANA </h1>
       <h2><u>Amadeo Jacohinde</u></h2>
       <br>
       <p>Volteé hacia la mesa y vi la pistola. Comprobé que tenía balas, la cargué, y salí a la calle como si nada, con la pistola en la mano. La gente me miraba y emitía todo tipo de reacciones. Eso me parecía gracioso. Unos niños se me quedaron viendo con una especie de miedo y reverencia. 
@@ -65,7 +65,7 @@
       <p class="apart">*</p>
       <p>Pocos conocen la verdadera historia del día en que empecé a ser leyenda. Acaso porque fue algo tan inesperado, o porque fue tan absurdo. Es más curioso porque esa historia realmente inicia nueve días antes, como a las tres de la tarde. Había faltado al trabajo, y fumaba marihuana tranquilamente en mi cuarto. Ya estaba muy drogada cuando, entre las delicias de la música que puse, alcancé a escuchar que alguien tocaba mi puerta. 
         Pensé que sería algún vecino, que venía a quejarse del aroma que dispersaba por todo el edificio. No me importó y fui a la puerta dispuesta a reírme de cualquier queja.</p>
-      <p>Abrí, y me llevé la sorpresa de mi vida. Un hombre. Alto, fornido, barbón, con cara de maldad y una pistola en la mano. Era feo, pero de mirada interesante.</p>
+      <p>Abrí, y me llevé la sorpresa de mi vida. Un hombre. Alto, fornido, barbón, con cara de maldad y una pistola en la mano. Era feo, pero con una mirada interesante.</p>
       <p>-Buenos días, señorita -saludó, con una sonrisa diabólica-. Vengo a reclamar ciertas "cositas" que me gustan de usted.</p>
       <p>Ya lo había visto antes, conversando con los delincuentes que se juntaban a beber en la calle frente a mi edificio.</p>
       <p>-Sólo le pido una cosa, señor. Lo que vaya a hacer, no es necesario hacerlo a la fuerza.</p>
@@ -135,12 +135,34 @@
       <br>
       <p style="text-align: center; font-size: 1.7em;"><i>Fin.</i></p>
         </section>
-       
-    <div id="inici" onclick="inise()">Volver a Índice"</div>
+      </div>
+
 <script type="text/javascript">
+      let brillo = 1;
       var ge = true, ke = false;
 function inise(){
   window.history.back();
+}
+function darmod(){
+  var testo = document.getElementById("conte");
+  var boton = document.getElementById("oscuro");
+  if(brillo == 1){
+  document.body.style.backgroundColor= "grey";
+  testo.style.backgroundColor = "black";
+  testo.style.color = "white";
+  boton.innerHTML= "Modo </br> Brillo";
+  boton.style.justifyContent = "center";
+  brillo = 0;
+} else{
+  document.body.style.backgroundColor= "rgba(80, 34, 6, 0.81)";
+  testo.style.backgroundColor = "#FFFFCC";
+  testo.style.color = "black";
+  boton.innerHTML= "Modo Oscuro";
+  brillo = 1;
+}
+}
+function lengua(){
+  window.location.replace("file:///C:/Users/jacor/OneDrive/Escritorio/JacohindeJS/LibroWeb/cuento2.html");
 }
     </script>
   </body>
