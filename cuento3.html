@@ -6,7 +6,7 @@
     <title>Máscaras de la Noche -A. Jacohinde</title>
     <link rel="canonical" href="https://jacohinde.github.io/cuento1">
     <link rel="icon" type="image/png" href="icon.webp" sizes="206x206"/>
-    <link rel="stylesheet" href="libro.css">
+    <link rel="stylesheet" href="libro1.css">
   </head>
   <body>
 
@@ -109,9 +109,31 @@
        
     <div id="inici" onclick="inise()">Volver a Índice"</div>
 <script type="text/javascript">
+  let brillo = 1;
       var ge = true, ke = false;
 function inise(){
   window.history.back();
+}
+  function darmod(){
+  var testo = document.getElementById("conte");
+  var boton = document.getElementById("oscuro");
+  if(brillo == 1){
+  document.body.style.backgroundColor= "grey";
+  testo.style.backgroundColor = "black";
+  testo.style.color = "white";
+  boton.innerHTML= "Modo </br> Brillo";
+  boton.style.justifyContent = "center";
+  brillo = 0;
+} else{
+  document.body.style.backgroundColor= "rgba(80, 34, 6, 0.81)";
+  testo.style.backgroundColor = "#FFFFCC";
+  testo.style.color = "black";
+  boton.innerHTML= "Modo Oscuro";
+  brillo = 1;
+}
+}
+function lengua(){
+  window.location.replace("tale4.html");
 }
     </script>
   </body>
