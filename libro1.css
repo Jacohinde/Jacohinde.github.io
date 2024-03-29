@@ -231,9 +231,6 @@ body{
       .indc{
         height: 75vh;
         top: 7%;
-        font-size: 7rem;
+        font-size: 2.7rem;
         color: white;
       }
-    .indc ol li a{
-      //font-size: 3.7em;
-  }
