@@ -38,10 +38,11 @@ body{
     box-shadow: 1px 3px 7px;
     font-size: 1.27em;
   }
-  .indc li{
+  .indc li a{
     cursor: pointer;
     margin: 12.7px;
     color: white;
+    text-decoration: none;
   }
   .indc li:hover{
     color: grey;
